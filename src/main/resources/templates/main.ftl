@@ -36,7 +36,10 @@
                 </div>
                 <div class="card-text m-2">
                     <a href="/redirect/${url.shorturl}">Перейти по оригинальной ссылке</a>
+                </div><div class="card-text m-2">
+                    <a href="/delete/${url.shorturl}">Удалить эту ссылку</a>
                 </div>
+
             </div>
         <#else >
             No urls
