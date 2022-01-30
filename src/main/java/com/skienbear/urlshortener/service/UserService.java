@@ -1,4 +1,4 @@
-package com.skienbear.urlshortener.Service;
+package com.skienbear.urlshortener.service;
 
 import com.skienbear.urlshortener.domain.Role;
 import com.skienbear.urlshortener.domain.User;
@@ -8,7 +8,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.Collections;
 import java.util.UUID;

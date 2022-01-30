@@ -3,15 +3,11 @@ package com.skienbear.urlshortener.domain;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
-import java.lang.reflect.Array;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 
-@Entity // This tells Hibernate to make a table out of this class
-@Table(name="urls")
+@Entity
+@Table(name = "urls")
 public class Urls {
     @javax.persistence.Id
     @Id
@@ -33,8 +29,6 @@ public class Urls {
     private Integer uniqueuser;
 
 
-
-
     public Urls() {
     }
 
@@ -42,9 +36,9 @@ public class Urls {
         this.author = user;
         this.shorturl = shorturl;
         this.longurl = long_url;
-        this.createdAt=createdAt;
-        this.redirects=0;
-        this.uniqueuser=0;
+        this.createdAt = createdAt;
+        this.redirects = 0;
+        this.uniqueuser = 0;
 
 
     }

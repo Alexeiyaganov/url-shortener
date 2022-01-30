@@ -1,6 +1,6 @@
 package com.skienbear.urlshortener.config;
 
-import com.skienbear.urlshortener.Service.UserService;
+import com.skienbear.urlshortener.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -16,6 +16,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UserService userService;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
